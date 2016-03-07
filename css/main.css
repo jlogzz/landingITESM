@@ -138,7 +138,6 @@ header{
 
 .action{
 	width: 100%;
-	font-size: 12px !important;
 }
 
 .action-dropdown{
@@ -151,6 +150,14 @@ header{
 
 .action-modal{
 	height: 100%;
+}
+
+.large-title{
+	margin-left: 300px !important;
+}
+
+.card-reveal-large{
+	padding-top: 60px !important;
 }
 
 @media only screen and (max-width: 1100px) {
