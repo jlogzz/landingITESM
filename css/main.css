@@ -192,7 +192,7 @@ header{
 }
 
 .contenido{
-	height: 605px;
+	height: 305px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -237,4 +237,74 @@ header{
 
 footer.page-footer{
 	margin-top: 0 !important;
+}
+
+.link:hover{
+	color: #ec9b1c !important;
+}
+
+.barra-arriba{
+	width: 100%;
+	top: 0;
+	height: 54px;
+}
+
+.breadcrumb-wrapper{
+	margin-left: 310px;
+	padding-top: 10px;
+}
+
+.filtro-wrapper{
+	margin-top: -10px;
+}
+
+.filtro{
+	width: 40%;
+	margin-left: 50%;
+	height: 54px !important;
+	margin-top: 0 !important;
+}
+
+.filtro select{
+	position: absolute;
+	margin-top: 5px;
+}
+
+.banner{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+.banner-img{
+	width: 100%;
+	height: auto;
+}
+
+.banner-logo{
+	width: 20%;
+	height: auto;
+	margin-top: -110px;
+	margin-left: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+	.barra-arriba{
+		width: 100%;
+		margin-top: 90px;
+		height: 80px;
+	}
+
+	.breadcrumb-wrapper{
+		margin-left: 0px;
+		padding-top: 10px;
+	}
+
+	.banner-logo{
+		position: absolute;
+		width: 40%;
+		height: auto;
+		top: 350px;
+		margin-left: 20px;
+	}
 }

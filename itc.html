@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body>
+	    <header>
+		    <div class="row">
+		      <div class="col s12 m12 l12 no-padding">
+		        <div class="card-panel indigo darken-4 no-margin" id="logo">
+		        	<a href="./index.html"><img src="img/logo_blanco.png" class="logo-img" /> </a>
+		          <span class="white-text"><i id="menu" class="material-icons">menu</i></span>
+		        </div>
+		      </div>
+		    </div>
+	    </header>
+
+	    <div id="side-nav">
+	    	<div class="row side-nav-content">
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Nosotros</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Campus</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Investigación</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Emprendimiento</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Desarrollo social</a>
+
+	    		<div class="social white-text">
+	    			<i class="fa fa-facebook-official"></i>
+	    			<i class="fa fa-twitter-square"></i>
+	    			<i class="fa fa-google-plus-square"></i>
+	    			<i class="fa fa-youtube-square"></i>
+	    			<i class="fa fa-linkedin-square"></i>
+	    			<i class="fa fa-envelope"></i>
+	    		</div>
+
+	    		<div class="language white-text">
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">English</a>
+	    		</div>
+	    	</div>
+	    </div>
+
+	    <div class="content" style="min-height: 600px;">
+		    <div class="row barra-arriba indigo darken-4">
+			    <div class="breadcrumb-wrapper hide-on-small-only">
+			    	<div class="col s12">
+			        <a href="./index.html" class="breadcrumb">Inicio</a>
+			        <a href="./educacion.html" class="breadcrumb">Educación</a>
+			        <a href="#!" class="breadcrumb">ITC</a>
+			      </div>
+		      </div>
+		      <div class="hide-on-med-and-up">
+		      	<a href="./index.html"><i class="material-icons white-text" style="font-size: 32px; padding-top: 25px;">skip_previous</i></a>
+		      </div>
+		    </div>
+
+	    	<div class="row">
+	    		<div class="banner">
+	    			<img src="img/itc.jpg" class="banner-img">
+    			</div>
+    			<img src="img/itc-logo.jpg" class="banner-logo">
+	    	</div>
+	    </div>
+
+	    <footer class="page-footer indigo darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">
+Ave. Eugenio Garza Sada 2501 Sur Col. Tecnológico C.P. 64849 <br> Monterrey, Nuevo León, México <br> Tel. +52 (81) 8358-2000</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3 link" href="#!">Aviso legal</a></li>
+                  <li><a class="grey-text text-lighten-3 link" href="#!">Políticas de privacidad</a></li>
+                  <li><a class="grey-text text-lighten-3 link" href="#!">Aviso de privacidad</a></li>
+                  <li><a class="grey-text text-lighten-3 link" href="#!">Sobre el sitio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2015
+            </div>
+          </div>
+        </footer>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      	$(document).ready(function() {
+      		$('.modal-trigger').leanModal();
+      		$('select').material_select();
+
+      		$("#quieroentrar").change(function(event) {
+      			if($(this).val() == 2){
+      				$("#meinteresadisabled").hide();
+      				$("#meinteresa").show();
+      			}else{
+      				$("#meinteresa").hide();
+      				$("#meinteresadisabled").show();
+      			}
+      		});
+
+      		$("#quieroentrar1").change(function(event) {
+      			if($(this).val() == 2){
+      				$("#meinteresadisabled1").hide();
+      				$("#meinteresa1").show();
+      			}else{
+      				$("#meinteresa1").hide();
+      				$("#meinteresadisabled1").show();
+      			}
+      		});
+
+      		$("#menu").click(function(event) {
+      			if($(this).html()=="menu"){
+      				$(this).fadeOut(200, function() {
+      					$(this).text("close").fadeIn(200);
+      				});
+      			}else{
+      				$(this).fadeOut(200, function() {
+      					$(this).text("menu").fadeIn(200);
+      				});
+      			}
+      			$("#side-nav").toggle('slide', {
+            	direction: 'left'
+        		}, 600);
+      		});
+      	});
+      </script>
+    </body>
+  </html>
