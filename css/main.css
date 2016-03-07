@@ -288,6 +288,28 @@ footer.page-footer{
 	margin-left: 200px;
 }
 
+@media only screen and (max-width: 1100px) {
+	.filtro{
+		width: 40%;
+		margin-left: 50%;
+		height: 54px !important;
+		margin-top: 0 !important;
+	}
+	.filtro select{
+		margin-top: -48px;
+	}
+	.back{
+		margin-left: 300px;
+	}
+	.banner-logo{
+		position: absolute;
+		width: 30%;
+		height: auto;
+		top: 350px;
+		margin-left: 100px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.barra-arriba{
 		width: 100%;
@@ -316,27 +338,9 @@ footer.page-footer{
 	.filtro select{
 		margin-top: -30px;
 	}
-}
 
-@media only screen and (max-width: 1100px) {
-	.filtro{
-		width: 40%;
-		margin-left: 50%;
-		height: 54px !important;
-		margin-top: 0 !important;
-	}
-	.filtro select{
-		margin-top: -48px;
-	}
-	.back{
-		margin-left: 300px;
-	}
-	.banner-logo{
-		position: absolute;
-		width: 30%;
-		height: auto;
-		top: 350px;
-		margin-left: 100px;
+	.itc-content-wrapper{
+		margin-top: -200px;
 	}
 }
 
