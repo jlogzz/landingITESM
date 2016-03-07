@@ -103,7 +103,7 @@
 	    			<a class="waves-effect waves-light action btn-large orange darken-4" href="#">Más Noticias</a>
 	    		</div>
 	    		<div class="col s12 m3 l2 no-padding">
-	    			<a class="waves-effect waves-light action btn-large light-blue" href="#">Selecciona tu programa</a>
+	    			<a class="waves-effect waves-light modal-trigger action btn-large light-blue" href="#modal1">Selecciona tu programa</a>
 	    		</div>
 	    		<div class="col s12 m3 l2 no-padding">
 	    			<a class="waves-effect waves-light dropdown-button action btn-large pink darken-2" data-beloworigin="true" data-activates='dropdown1' href="#">Ingreso a portales</a>
@@ -128,12 +128,73 @@
 	    	</div>
 	    </div>
 
+	    <footer class="page-footer indigo darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">
+Ave. Eugenio Garza Sada 2501 Sur Col. Tecnológico C.P. 64849 <br> Monterrey, Nuevo León, México <br> Tel. +52 (81) 8358-2000</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Aviso legal</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Políticas de privacidad</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Aviso de privacidad</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Sobre el sitio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2015
+            </div>
+          </div>
+        </footer>
+
+	    <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer action-modal">
+    <div class="modal-content">
+      <h4>Selecciona tu programa</h4>
+      <br>
+      <div class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Quiero entrar a:</option>
+		      <option value="1">Preparatoria</option>
+		      <option value="2">Carreras Profesionales</option>
+		      <option value="3">Maestrías y Doctorados</option>
+		      <option value="4">Diplomados</option>
+		    </select>
+		  </div>
+		  <br>
+      <div class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Y me interesa:</option>
+		      <option value="1">Arquitectura, Arte y Diseño</option>
+		      <option value="2">Biotecnología, Agricultura y Alimentos</option>
+		      <option value="3">Humanidades y Ciencias Sociales</option>
+		      <option value="4">Ingeniería</option>
+		      <option value="5">Medicina y Ciencias de la Salud</option>
+		      <option value="6">Negocios y Administración</option>
+		      <option value="7">Tecnologías de Información y Electrónica</option>
+		      <option value="8">Ver todas las opciones</option>
+		    </select>
+		  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Seleccionar programa</a>
+    </div>
+  </div>
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript">
       	$(document).ready(function() {
+      		$('.modal-trigger').leanModal();
+      		$('select').material_select();
+
       		$("#menu").click(function(event) {
       			if($(this).html()=="menu"){
       				$(this).fadeOut(200, function() {

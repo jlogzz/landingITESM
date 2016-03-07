@@ -149,6 +149,10 @@ header{
 	color: black !important;
 }
 
+.action-modal{
+	height: 100%;
+}
+
 @media only screen and (max-width: 1100px) {
 	.card-image.large{
 		height: 430px !important;
@@ -177,4 +181,8 @@ header{
 		height: auto;
 		width: 100%;
 	}
+}
+
+footer.page-footer{
+	margin-top: 0 !important;
 }
