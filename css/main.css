@@ -339,3 +339,8 @@ footer.page-footer{
 		margin-left: 100px;
 	}
 }
+
+.itc-content{
+	width: 100%;
+	margin-top: -6px;
+}
