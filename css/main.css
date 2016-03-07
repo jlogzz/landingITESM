@@ -291,7 +291,7 @@ footer.page-footer{
 @media only screen and (max-width: 600px) {
 	.barra-arriba{
 		width: 100%;
-		margin-top: 90px;
+		margin-top: 80px;
 		height: 80px;
 	}
 
@@ -306,5 +306,14 @@ footer.page-footer{
 		height: auto;
 		top: 350px;
 		margin-left: 20px;
+	}
+	.filtro{
+		width: 60%;
+		margin-left: 30%;
+		height: 54px !important;
+		margin-top: 0 !important;
+	}
+	.filtro select{
+		margin-top: -30px;
 	}
 }
