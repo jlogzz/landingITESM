@@ -3,6 +3,8 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection">
@@ -25,7 +27,26 @@
 	    </header>
 
 	    <div id="side-nav">
-	    	
+	    	<div class="row side-nav-content">
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Nosotros</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Campus</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Investigación</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Emprendimiento</a>
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">Desarrollo social</a>
+
+	    		<div class="social white-text">
+	    			<i class="fa fa-facebook-official"></i>
+	    			<i class="fa fa-twitter-square"></i>
+	    			<i class="fa fa-google-plus-square"></i>
+	    			<i class="fa fa-youtube-square"></i>
+	    			<i class="fa fa-linkedin-square"></i>
+	    			<i class="fa fa-envelope"></i>
+	    		</div>
+
+	    		<div class="language white-text">
+	    		<a class="waves-effect waves-light btn-flat btn-large white-text side-nav-button">English</a>
+	    		</div>
+	    	</div>
 	    </div>
 
 	    <div class="content">
@@ -130,7 +151,7 @@
 	    		</div>
 	    	</div>
 
-	    	<div class="row">
+	    	<div class="row hide-on-small-only">
 	    		<div class="col s12 m8 l8">
 	    			<div class="card white contenido">
 	    				a
@@ -178,34 +199,68 @@ Ave. Eugenio Garza Sada 2501 Sur Col. Tecnológico C.P. 64849 <br> Monterrey, Nu
     <div class="modal-content">
       <h4>Selecciona tu programa</h4>
       <br>
-      <div class="input-field col s12">
-		    <select id="quieroentrar">
-		      <option value="" disabled selected>Quiero entrar a:</option>
-		      <option value="1">Preparatoria</option>
-		      <option value="2">Carreras Profesionales</option>
-		      <option value="3">Maestrías y Doctorados</option>
-		      <option value="4">Diplomados</option>
-		    </select>
-		  </div>
-		  <br>
-		  <div id="meinteresadisabled" class="input-field col s12">
-		    <select disabled>
-		      <option value="" disabled selected>Y me interesa:</option>
-		    </select>
-		  </div>
-      <div id="meinteresa" class="input-field col s12" hidden="true">
-		    <select>
-		      <option value="" disabled selected>Y me interesa:</option>
-		      <option value="1">Arquitectura, Arte y Diseño</option>
-		      <option value="2">Biotecnología, Agricultura y Alimentos</option>
-		      <option value="3">Humanidades y Ciencias Sociales</option>
-		      <option value="4">Ingeniería</option>
-		      <option value="5">Medicina y Ciencias de la Salud</option>
-		      <option value="6">Negocios y Administración</option>
-		      <option value="7">Tecnologías de Información y Electrónica</option>
-		      <option value="8">Ver todas las opciones</option>
-		    </select>
-		  </div>
+
+      <div class="hide-on-small-only">
+	      <div class="input-field col s12">
+			    <select id="quieroentrar">
+			      <option value="" disabled selected>Quiero entrar a:</option>
+			      <option value="1">Preparatoria</option>
+			      <option value="2">Carreras Profesionales</option>
+			      <option value="3">Maestrías y Doctorados</option>
+			      <option value="4">Diplomados</option>
+			    </select>
+			  </div>
+			  <br>
+			  <div id="meinteresadisabled" class="input-field col s12">
+			    <select disabled>
+			      <option value="" disabled selected>Y me interesa:</option>
+			    </select>
+			  </div>
+	      <div id="meinteresa" class="input-field col s12" hidden="true">
+			    <select>
+			      <option value="" disabled selected>Y me interesa:</option>
+			      <option value="1">Arquitectura, Arte y Diseño</option>
+			      <option value="2">Biotecnología, Agricultura y Alimentos</option>
+			      <option value="3">Humanidades y Ciencias Sociales</option>
+			      <option value="4">Ingeniería</option>
+			      <option value="5">Medicina y Ciencias de la Salud</option>
+			      <option value="6">Negocios y Administración</option>
+			      <option value="7">Tecnologías de Información y Electrónica</option>
+			      <option value="8">Ver todas las opciones</option>
+			    </select>
+			  </div>
+			</div>
+
+			<div class="hide-on-med-and-up">
+	      <div class="input-field col s12">
+			    <select class="browser-default" id="quieroentrar1">
+			      <option value="" disabled selected>Quiero entrar a:</option>
+			      <option value="1">Preparatoria</option>
+			      <option value="2">Carreras Profesionales</option>
+			      <option value="3">Maestrías y Doctorados</option>
+			      <option value="4">Diplomados</option>
+			    </select>
+			  </div>
+			  <br>
+			  <div id="meinteresadisabled1" class="input-field col s12">
+			    <select class="browser-default" disabled>
+			      <option value="" disabled selected>Y me interesa:</option>
+			    </select>
+			  </div>
+	      <div id="meinteresa1" class="input-field col s12" hidden="true">
+			    <select class="browser-default">
+			      <option value="" disabled selected>Y me interesa:</option>
+			      <option value="1">Arquitectura, Arte y Diseño</option>
+			      <option value="2">Biotecnología, Agricultura y Alimentos</option>
+			      <option value="3">Humanidades y Ciencias Sociales</option>
+			      <option value="4">Ingeniería</option>
+			      <option value="5">Medicina y Ciencias de la Salud</option>
+			      <option value="6">Negocios y Administración</option>
+			      <option value="7">Tecnologías de Información y Electrónica</option>
+			      <option value="8">Ver todas las opciones</option>
+			    </select>
+			  </div>
+			</div>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Seleccionar programa</a>
@@ -237,6 +292,16 @@ Ave. Eugenio Garza Sada 2501 Sur Col. Tecnológico C.P. 64849 <br> Monterrey, Nu
       			}else{
       				$("#meinteresa").hide();
       				$("#meinteresadisabled").show();
+      			}
+      		});
+
+      		$("#quieroentrar1").change(function(event) {
+      			if($(this).val() == 2){
+      				$("#meinteresadisabled1").hide();
+      				$("#meinteresa1").show();
+      			}else{
+      				$("#meinteresa1").hide();
+      				$("#meinteresadisabled1").show();
       			}
       		});
 
