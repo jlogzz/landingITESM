@@ -1,0 +1,171 @@
+header{
+	width: 17% !important;
+	position: fixed !important;
+	top:20px;
+	z-index: 1000;
+}
+
+.row{
+	margin-bottom: 0px !important;
+}
+
+.square{
+	border-radius: 0px !important;
+}
+
+.no-shadow{
+	box-shadow: none !important;
+}
+
+.no-padding{
+	padding: 0 !important;
+}
+
+.no-margin{
+	margin: 0px !important;
+}
+
+#logo{
+	border-radius: 0px !important;
+	padding: 10px !important;
+	line-height: 0 !important;
+}
+
+#logo span i{
+	font-size: 36px !important;
+}
+
+.logo-img{
+	width: 70%;
+	margin-right: 15px;
+}
+ 
+#menu:hover{
+	cursor: pointer;
+}
+
+#menu{
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+#side-nav{
+	/*visibility: none;*/
+	display: none;
+	width: 17% !important;
+	position: fixed !important;
+	top:0px;
+	z-index: 999;
+	height: 100%;
+	background-color: #1a237e !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+  header{
+		width: 30% !important;
+	}
+
+	#side-nav{
+		width: 30% !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+  header{
+		width: 100% !important;
+		top:0px;
+	}
+
+	.logo-img{
+		width: 70%;
+		margin-right: 25px;
+	}
+
+	#menu{
+		vertical-align: top;
+		margin-top: 6%;
+	}
+
+	#side-nav{
+		width: 100% !important;
+	}
+}
+
+
+/* Content */
+
+.content{
+	min-height: 900px;
+	width: 100%;
+	background-color: #a3a3a3;
+}
+
+.main-card{
+	opacity: 0.9;
+}
+
+.main-card:hover{
+	opacity: 1.0;
+}
+
+.card-image.large{
+	height: 430px !important;
+	overflow: hidden;
+}
+
+.card-image img.large {
+	height: 430px;
+	width: auto;
+}
+
+.card-image.small{
+	height: 215px !important;
+	overflow: hidden;
+}
+
+.card-image img.small {
+	height: 215px;
+	width: auto;
+	min-width: 100%;
+}
+
+.action-buttons{
+	background-color: #ec9b1c;
+	height: 54px;
+}
+
+.action{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+	.card-image.large{
+		height: 430px !important;
+		overflow: hidden;
+	}
+
+	.card-image img.large {
+		height: 430px;
+		width: auto;
+		min-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.content{
+		margin-top: 80px;
+	}
+
+	.card-image.large, .card-image.small{
+		height: 200px !important;
+		overflow: hidden;
+	}
+
+	.card-image img.large, .card-image img.small {
+		min-height: 100%;
+		height: auto;
+		width: 100%;
+	}
+}

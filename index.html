@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+	    <header>
+		    <div class="row">
+		      <div class="col s12 m12 l12 no-padding">
+		        <div class="card-panel indigo darken-4 no-margin" id="logo">
+		        	<img src="img/logo_blanco.png" class="logo-img" /> 
+		          <span class="white-text"><i id="menu" class="material-icons">menu</i></span>
+		        </div>
+		      </div>
+		    </div>
+	    </header>
+
+	    <div id="side-nav">
+	    	
+	    </div>
+
+	    <div class="content">
+	    	<div class="row">
+
+	    		<div class="col s12 m8 l6 no-padding">
+	    			<div class="card no-margin main-card no-shadow">
+	            <div class="card-image large square waves-effect waves-block waves-light">
+	              <img src="img/main1.jpg" class="square large activator">
+	              <span class="card-title">Card Title</span>
+	            </div>
+	            <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+	          </div>
+	    		</div>
+
+	    		<div class="col s12 m4 l3 no-padding hide-on-small-only">
+	    			<div class="card no-margin main-card no-shadow">
+	            <div class="card-image small square waves-effect waves-block waves-light">
+	              <img src="img/main2.jpg" class="square small activator">
+	              <span class="card-title">Card Title</span>
+	            </div>
+	            <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+	          </div>
+	    		</div>
+
+	    		<div class="col s12 m4 l3 no-padding hide-on-small-only">
+	    			<div class="card no-margin main-card no-shadow">
+	            <div class="card-image small square waves-effect waves-block waves-light">
+	              <img src="img/main3.jpg" class="square small activator">
+	              <span class="card-title">Card Title</span>
+	            </div>
+	            <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+	          </div>
+	    		</div>
+
+	    		<div class="col s12 m4 l3 no-padding hide-on-small-only">
+	    			<div class="card no-margin main-card no-shadow">
+	            <div class="card-image small square waves-effect waves-block waves-light">
+	              <img src="img/main4.jpg" class="square small activator">
+	              <span class="card-title">Card Title</span>
+	            </div>
+	            <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+	          </div>
+	    		</div>
+
+	    		<div class="col s12 m4 l3 no-padding hide-on-small-only">
+	    			<div class="card no-margin main-card no-shadow">
+	            <div class="card-image small square waves-effect waves-block waves-light">
+	              <img src="img/main5.jpg" class="square small activator">
+	              <span class="card-title">Card Title</span>
+	            </div>
+	            <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+	          </div>
+	    		</div>
+
+	    	</div>
+
+	    	<div class="row action-buttons">
+	    		<div class="col s12 m3 l2 offset-l2 no-padding">
+	    			<a class="waves-effect waves-light action btn-large orange darken-4" href="#">Mas Noticias</a>
+	    		</div>
+	    		<div class="col s12 m3 l2 no-padding">
+	    			<a class="waves-effect waves-light action btn-large light-blue" href="#">Mas Noticias</a>
+	    		</div>
+	    		<div class="col s12 m3 l2 no-padding">
+	    			<a class="waves-effect waves-light action btn-large pink darken-2" href="#">Mas Noticias</a>
+	    		</div>
+	    		<div class="col s12 m3 l2 no-padding">
+	    			<a class="waves-effect waves-light action btn-large light-green" href="#">Mas Noticias</a>
+	    		</div>
+	    	</div>
+	    </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      	$(document).ready(function() {
+      		$("#menu").click(function(event) {
+      			if($(this).html()=="menu"){
+      				$(this).fadeOut(200, function() {
+      					$(this).text("close").fadeIn(200);
+      				});
+      			}else{
+      				$(this).fadeOut(200, function() {
+      					$(this).text("menu").fadeIn(200);
+      				});
+      			}
+      			$("#side-nav").toggle('slide', {
+            	direction: 'left'
+        		}, 600);
+      		});
+      	});
+      </script>
+    </body>
+  </html>
